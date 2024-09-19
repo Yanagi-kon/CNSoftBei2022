@@ -1,0 +1,65 @@
+
+view,
+label,
+swiper-item,
+scroll-view {
+  display:flex;
+  flex-direction:column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  align-items: stretch;
+  align-content: flex-start;
+}
+view,
+image,
+input,
+scroll-view,
+swiper,
+swiper-item,
+text,
+textarea,
+video {
+  position: relative;
+  border: 0px solid #000000;
+  box-sizing: border-box;
+}
+swiper-item {
+  position: absolute;
+}
+button {
+  margin: 0;
+}
+
+
+.custom {
+	background-color: #2C65F7;
+}
+.navcontent {
+	height: 45px;
+	display: -ms-flex;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	color: #FFFFFF;
+}
+.livePusher {
+	width: 350px;
+	height: 350px;
+}
+.livefater {
+	display: -ms-flex;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50rpx;
+	margin-bottom: 50rpx;
+	height: 350px;
+}
+.gaiimg {
+	width: 350px;
+	height: 350px;
+	margin-top: -350px;
+}
+

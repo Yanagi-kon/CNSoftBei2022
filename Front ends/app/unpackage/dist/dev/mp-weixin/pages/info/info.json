@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "个人信息",
+  "usingComponents": {
+    "pca-picker-cc": "/components/pca-picker-cc/pca-picker-cc"
+  }
+}

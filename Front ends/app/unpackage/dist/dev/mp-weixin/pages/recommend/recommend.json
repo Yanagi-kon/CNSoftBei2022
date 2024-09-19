@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "智能推荐",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "book-list": "/components/bookList",
+    "search-box": "/components/searchBox"
+  }
+}

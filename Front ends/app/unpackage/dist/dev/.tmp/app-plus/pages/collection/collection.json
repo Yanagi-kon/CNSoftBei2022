@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "my-icon": "/components/myIcon",
+    "tab-top": "/components/tabTop",
+    "search-box": "/components/searchBox",
+    "collect-item": "/components/collectItem"
+  }
+}

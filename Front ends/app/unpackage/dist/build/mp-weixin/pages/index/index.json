@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "myaudio": "/components/myaudio",
+    "book-list": "/components/bookList",
+    "search-box": "/components/searchBox",
+    "list-header": "/components/listHeader",
+    "function-sort": "/components/functionSort",
+    "rotation-chart": "/components/rotationChart",
+    "recommond": "/components/compound/recommond"
+  }
+}

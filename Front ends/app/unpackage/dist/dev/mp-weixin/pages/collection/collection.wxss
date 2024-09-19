@@ -1,0 +1,38 @@
+.history .title {
+  margin-top: 5rpx;
+  font-size: 30rpx;
+}
+.history .line {
+  height: 2rpx;
+  background-color: #dedede;
+}
+.history view:first-child {
+  font-size: 36rpx;
+  color: #0056B3;
+}
+.history .time {
+  font-size: 26rpx;
+  color: #a6a6a6;
+}
+.content {
+  height: 600rpx;
+  width: 640rpx;
+  background-color: #d3d3d3;
+  position: absolute;
+  top: 300rpx;
+  left: 25rpx;
+  border-radius: 30rpx;
+  padding: 20rpx 30rpx;
+}
+.mycamera {
+  padding-top: 180rpx;
+  padding-left: 130rpx;
+}
+.mytext {
+  margin-left: 175rpx;
+  width: 420rpx;
+  height: 170rpx;
+  color: #008080;
+  font-size: 70rpx;
+}
+

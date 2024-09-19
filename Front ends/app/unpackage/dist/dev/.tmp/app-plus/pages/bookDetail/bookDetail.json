@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "图书详情",
+  "usingComponents": {
+    "tab-top": "/components/tabTop",
+    "page-title": "/components/pageTitle"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "音乐详情",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "my-icon": "/components/myIcon",
+    "page-title": "/components/pageTitle"
+  }
+}

@@ -1,0 +1,52 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/news?characterEncoding=utf-8&amp&&serverTimezone=GMT%2B8&amp&&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    #  数据源其他配置
+    initialSize : 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validaionQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    #    配置监控统计拦截的filters 去掉后监控界面sql无法统计，‘wall’用于防火墙
+    filters: stat,wall,log4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true,druid.stat.slowSqlMills=500
+
+  jpa:
+    #开启SQL语句执行日志信息
+    show-sql: true
+    hibernate:
+      #配置为自动创建
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  port: 9999
+  max-http-header-size:  10240000
+#path:
+#  url: D:\
+#  baseUrl: http://192.168.0.103:${server.port}/file/
+path:
+  url: D:\SoundFile\
+  baseUrl: http://36.138.201.130:${server.port}/file/
+#path:
+#  url: D:\
+#  baseUrl: http://5b3427d739.zicp.vip:55917/file/
+
+# mybatis
+mybatis:
+ mapper-locations: classpath:mapper/*.xml
+ map-underscore-to-camel-case: true

@@ -1,0 +1,22 @@
+
+.uni-padding-wrap {
+	position: absolute;
+    height: 100%;
+	width: 100%;
+	padding-top: 300rpx;
+	padding-left:90rpx;
+	background-color: #F0F8FF; /*#FFF5EE */
+}
+.myface{
+}
+.Button{
+	color: black;
+	width:500rpx;
+	margin-top :100rpx;
+	margin-left :40rpx;
+	height: 120rpx;
+	line-height: 115rpx;
+	font-size: 50rpx;
+}
+
+

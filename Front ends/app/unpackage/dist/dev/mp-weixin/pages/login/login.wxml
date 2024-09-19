@@ -1,0 +1,1 @@
+<view class="uni-padding-wrap"><image class="myface" style="width:600rpx;height:600rpx;" src="/static/user/face.png"></image><button data-event-opts="{{[['tap',[['switchToPage']]]]}}" class="Button" bindtap="__e">立即登录/注册</button></view>

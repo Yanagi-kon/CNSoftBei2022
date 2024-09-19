@@ -1,0 +1,70 @@
+.recommend {
+  width: 94%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx 10rpx rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 100rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  z-index: 999;
+}
+.recommend .left_r {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+.recommend .left_r image {
+  width: 100%;
+  height: 100%;
+}
+.recommend .right_r {
+  flex: 1;
+  margin: 0 10rpx;
+}
+.recommend .right_r .p1 {
+  font-weight: bolder;
+  font-size: 28rpx;
+  color: #333;
+}
+.recommend .right_r .p1 .span {
+  color: #999;
+  font-size: 22rpx;
+  margin-left: 10rpx;
+}
+.recommend .close_r {
+  width: 48rpx;
+  height: 48rpx;
+}
+.recommend .close_r image {
+  width: 100%;
+  height: 100%;
+}
+.clean {
+  color: #0056B3;
+  font-size: 30rpx;
+}
+.img {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #fff;
+  z-index: 999;
+}
+.img image {
+  width: 250rpx;
+  height: 250rpx;
+}
+.recommend {
+  margin-left: 30rpx;
+  font-weight: bold;
+  color: #008080;
+}
+.myvoice {
+  margin-right: 10rpx;
+}
+

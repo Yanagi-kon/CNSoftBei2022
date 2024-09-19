@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "收藏",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "tab-top": "/components/tabTop",
+    "search-box": "/components/searchBox",
+    "collect-item": "/components/collectItem"
+  }
+}

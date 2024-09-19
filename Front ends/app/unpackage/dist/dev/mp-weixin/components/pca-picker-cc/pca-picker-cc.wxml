@@ -1,0 +1,1 @@
+<view class="pca-picker-cc"><picker mode="multiSelector" value="{{multiIndexArr}}" range="{{multiArray}}" data-event-opts="{{[['columnchange',[['bindMultiPickerColumnChange',['$event']]]],['change',[['change',['$event']]]]]}}" bindcolumnchange="__e" bindchange="__e"><slot></slot></picker></view>

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationStyle": "default",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "book-list": "/components/bookList",
+    "search-box": "/components/searchBox"
+  }
+}

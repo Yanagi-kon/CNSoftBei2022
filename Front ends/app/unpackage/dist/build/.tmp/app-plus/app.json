@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/sort/sort",
+    "pages/collection/collection",
+    "pages/mine/mine",
+    "pages/readLIst/readLIst",
+    "pages/listenNoval/listenNoval",
+    "pages/listenMusic/listenMusic",
+    "pages/listenKnowledge/listenKnowledge",
+    "pages/musicDetail/musicDetail",
+    "pages/bookDetail/bookDetail",
+    "pages/reading/reading"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "titleNView": false,
+    "bounce": "none"
+  },
+  "tabBar": {
+    "selectedColor": "#dc4d2f",
+    "fontSize": "12px",
+    "backgroundColor": "#f4f7fc",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/indexed.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "分类",
+        "iconPath": "static/tabbar/sort.png",
+        "selectedIconPath": "static/tabbar/sorted.png"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "收藏",
+        "iconPath": "static/tabbar/collection.png",
+        "selectedIconPath": "static/tabbar/collectioned.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/mined.png"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "ND",
+  "compilerVersion": "2.6.6",
+  "usingComponents": {
+    "my-icon": "/components/myIcon"
+  }
+}

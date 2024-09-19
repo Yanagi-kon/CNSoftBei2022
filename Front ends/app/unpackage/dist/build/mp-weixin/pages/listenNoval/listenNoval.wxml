@@ -1,0 +1,1 @@
+<view><page-title vue-id="288398cc-1" bind:__l="__l" vue-slots="{{['default']}}">小说</page-title><book-list vue-id="288398cc-2" bookListArr="{{loadedBookList}}" bind:__l="__l"></book-list><uni-load-more vue-id="288398cc-3" status="{{loadMoreStatus}}" bind:__l="__l"></uni-load-more></view>

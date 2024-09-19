@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "list-header": "/components/listHeader"
+  },
+  "component": true
+}

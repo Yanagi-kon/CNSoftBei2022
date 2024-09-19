@@ -1,0 +1,23 @@
+.clean {
+  color: #0056B3;
+  font-size: 30rpx;
+}
+.img {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #fff;
+  z-index: 999;
+}
+.img image {
+  width: 250rpx;
+  height: 250rpx;
+}
+.recommend {
+  margin-left: 30rpx;
+  font-weight: bold;
+  color: #008080;
+}
+.myvoice {
+  margin-right: 10rpx;
+}
+

@@ -1,0 +1,27 @@
+.image-news image {
+  width: 200rpx;
+}
+.title-t {
+  font-size: 28rpx;
+  color: #868686;
+}
+.line {
+  height: 1rpx;
+  width: 180rpx;
+  background-color: #ababab;
+}
+.news-box {
+  padding: 20rpx 20rpx;
+}
+.news-box .title {
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.news-box .time text:first-child {
+  font-size: 28rpx;
+}
+.news-box .time text:last-child {
+  font-size: 24rpx;
+  color: #0E151D;
+}
+

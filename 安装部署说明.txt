@@ -1,0 +1,3 @@
+本项目后端及数据库部署在移动云服务器
+app用户端可直接下载apk文件安装运行
+web管理端npm install安装依赖，npm run dev运行

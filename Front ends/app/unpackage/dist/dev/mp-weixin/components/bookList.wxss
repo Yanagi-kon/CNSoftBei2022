@@ -1,0 +1,5 @@
+.content text {
+  color: #0056B3;
+  font-size: 28rpx;
+}
+

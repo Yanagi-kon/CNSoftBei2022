@@ -1,0 +1,24 @@
+
+.uni-padding-wrap {
+		padding: 150rpx;
+}
+.commitButton{
+		color: black;
+		width: 90%;
+		margin: 0rpx auto;
+		height: 85rpx;
+		line-height: 75rpx;
+		font-size: 45rpx;
+		background: linear-gradient(left top,#86B6FD, #8fc9fc,#86B6FD);
+}
+.contentTextArea{
+		font-size: 30rpx;
+		height:700rpx;
+		border:1rpx solid #e9e7ef;
+		width: 85%;
+		margin: 0rpx auto;
+		margin-bottom: 15rpx;
+		padding: 20rpx 0 0 20rpx;
+		border-radius: 6rpx;
+}
+

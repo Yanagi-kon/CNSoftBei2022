@@ -1,0 +1,9 @@
+.image image {
+  width: 550rpx;
+  height: 230rpx;
+  border-radius: 10rpx;
+}
+.selected {
+  color: #f7646d;
+}
+

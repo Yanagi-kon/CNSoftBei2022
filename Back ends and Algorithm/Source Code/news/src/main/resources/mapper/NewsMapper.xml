@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.l024.app.appfile.dao.NewsMapper">
+    <update id="updateUserInfo" parameterType="com.l024.webmanager.dto.UserDto">
+        update  `user`
+       <trim prefix="set" suffixOverrides=",">
+        <if test="vision!='null' and vision!=''">vision = #{vision},</if>
+        <if test="id!='null' and id!=''">uid = #{id},</if>
+        <if test="nickname!='null' and nickname!=''">nickname = #{nickname},</if>
+        <if test="tel!='null' and tel!=''">tel = #{tel},</if>
+        <if test="email!='null' and email!=''">email = #{email},</if>
+        <if test="introduction!='null' and introduction!=''">introduction = #{introduction},</if>
+        <if test="birthday!='null' and birthday!=''">birthday = #{birthday},</if>
+        <if test="sex!='null' and sex!=''">sex = #{sex},</if>
+        <if test="area!='null' and area!=''">area = #{area},</if>
+        <if test="province!='null' and province!=''">province = #{province},</if>
+        <if test="city!='null' and city!=''">city = #{city},</if>
+        <if test="district!='null' and district!=''">district = #{district}</if>
+       </trim>
+        where uid = #{id}
+    </update>
+    <update id="updateSumByNid" parameterType="java.lang.Integer">
+        update news set sums=#{sum}+1 where nid = #{nid}
+    </update>
+    <select id="getNews" parameterType="com.l024.app.appfile.entity.News" resultType="com.l024.app.appfile.entity.News">
+        select n.nid as id,n.title,n.nclass,media,n.time,n.text,n.sums from news as n
+        <trim prefix="where" prefixOverrides="and || or">
+             <if test="nclass!=null and nclass!=''">
+            and  nclass = #{nclass}
+            </if>
+
+            <if test="title!=null and title!= ''">
+            and title = #{title}
+           </if>
+
+        </trim>
+    </select>
+    <select id="getNewsByType" resultType="com.l024.webmanager.dto.NewsDto">
+        SELECT count(nid) as count,nclass FROM `news`  GROUP BY nclass
+    </select>
+    <select id="getSumByNclass" resultType="com.l024.webmanager.dto.NewsDto">
+        SELECT SUM(sums)  as sum,nclass   FROM `news` GROUP BY nclass
+    </select>
+    <select id="getNewsLike" parameterType="com.l024.app.appfile.entity.News" resultType="com.l024.app.appfile.entity.News">
+        SELECT n.nid id,n.title,n.nclass,n.media,n.time,n.text,n.sums
+        FROM news n WHERE title LIKE  CONCAT('%',#{title},'%') or nclass LIKE CONCAT ('%',#{title},'%')
+    </select>
+    <select id="lit" parameterType="java.lang.String" resultType="com.l024.app.appfile.entity.News">
+        select * from news where  title LIKE  CONCAT('%',#{s},'%')
+    </select>
+
+    <select id="getNewsList" parameterType="java.util.Map" resultType="com.l024.app.appfile.entity.News">
+        select *, nid as id from news
+        <trim prefix="where" prefixOverrides="and || or">
+            <if test="nclass!=null and nclass!=''">
+                and  nclass = #{nclass}
+            </if>
+            and theme is not null
+
+        </trim>
+        order by time desc
+    </select>
+    <select id="getNewsListWeb" parameterType="java.util.Map" resultType="com.l024.app.appfile.entity.News">
+        select *, nid as id from news
+        <trim prefix="where" prefixOverrides="and || or">
+            <if test="nclass!=null and nclass!=''">
+                and  nclass = #{nclass}
+            </if>
+
+        </trim>
+        order by time desc
+    </select>
+
+    <select id="getUserDistribution" resultType="java.util.Map">
+        select province as name ,COUNT(province) as `value` from user
+        where province is not null
+        group by province
+    </select>
+</mapper>

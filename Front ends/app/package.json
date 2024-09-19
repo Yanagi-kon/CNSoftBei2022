@@ -1,0 +1,16 @@
+{
+    "id": "pca-picker-cc",
+    "name": "区域三级联动组件",
+    "version": "1.0.2",
+    "description": "区域三级联动组件",
+    "keywords": [
+        "区域",
+        "地区",
+        "三级联动",
+        "地区组件",
+        "区域组件"
+    ],
+    "dependencies": {
+        "image-tools": "^1.4.0"
+    }
+}
